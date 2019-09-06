@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<body>
+
+  <a href="#" onclick="document.getElementById('id01').style.display='block'">Open Modal</a>
+
+  <div id="id01" class="w3-modal">
+    <div style="width: 1200px; margin: auto auto; background-color: white; ">
+       
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <div class="info">
+            <b>Información general del estudiante</b>
+        </div>
+        <div class="kardex">
+            <div class="datos">
+                <b>DATOS DEL ESTUDIANTE</b>
+            </div>
+            <table class="table-fill"  width="100%">
+                    <thead>
+                        <tr>
+                            <th >Codigo</th>
+                            <th>Apellido</th>
+                            <th>Nombre</th>
+                            <th>Adminisión</th>
+                            <th>Situación</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr>
+                            <td>214423214</td>
+                                <td>Contreras Nuño</td>
+                            <td>Jonatan(AC)</td>
+                            <td>2017A</td>
+                            <td>Alumno Activo(AC)</td>
+                        </tr>
+                    </tbody>
+                </table>   
+        </div>
+      
+    </div>
+  </div>
+            
+</body>
+</html>
