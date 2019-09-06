@@ -11,7 +11,7 @@
     border-radius: 5px;
     margin-left: 89%;
 }
-.datos ul {
+.datosbarra ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -19,11 +19,11 @@
   background-color: #19558B;
 }
 
-.datos li {
+.datosbarra li {
   float: left;
 }
 
-.datos li a {
+.datosbarra li a {
   display: block;
   color: white;
   text-align: center;
@@ -31,7 +31,7 @@
   text-decoration: none;
 }
 
-.datos li a:hover {
+.datosbarra li a:hover {
   background-color: #146cba;
 }
 .barra ul {
@@ -159,7 +159,6 @@ th:last-child {
   
 tr {
   border-top: 1px solid #C1C3D1;
-  border-bottom-: 1px solid #C1C3D1;
   color:#666B85;
   font-size:20px;
   font-weight:normal;
