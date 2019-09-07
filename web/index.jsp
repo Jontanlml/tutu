@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Crear una incidencia</title>
@@ -23,6 +18,12 @@ and open the template in the editor.
         </script> 
     </head>
     <body>
+        <%
+            String tutor = "HERNANDEZ GONZALEZ, NOE SALVADOR";
+            String programa[] = {"Licenciatura en Tecnologias de la informacion(TI)","Ingenieria en Ciencias Computacionales(ICCO)"};
+            String alumnos[][] = {{"Contreras NuÒo, Jonatan(214423214)","ICCO","CUTonal·","Activo(AC)","NULL"},{"Hernandez Flores, Oscar Ernesto(217726862)","ICCO","CUTonal·","Activo(AC)","NULL"},{"Lopez Perez, Sergio Alberto(211226862)","ICCO","CUTonal·","Activo(AC)","NULL"}};
+            session.setAttribute("tutor",tutor);
+        %>
         <div class="indices">
             <div class="seleccion">
                 <select name="tipo">
@@ -35,20 +36,20 @@ and open the template in the editor.
                     <li><a href="#"><i class="far fa-square"></i> UDG Virtual</a></li>
                     <li><a href="#">Modulo virtual de tutorias</a></li>
                     <li style="float:right"><a href="#">Salir <i class="fas fa-sign-out-alt"></i></a></li>
-                    <li style="float:right"><a href="#">Contreras Nu√±o, Jonatan</a></li>
+                    <li style="float:right"><a href="#"><%=tutor%></a></li>
                 </ul>
             </div>
             <div class="barra">
                 <ul class="indice">
                     <li><a href="../Tutu"><i class="fas fa-plus"></i> Crear una incidencia</a></li>
-                    <li><a href="../Tutu/jsp/listaIncidencias.html"><i class="far fa-calendar-alt"></i> Lista de incidencias</a></li>
+                    <li><a href="../Tutu/jsp/listaIncidencias.jsp"><i class="far fa-calendar-alt"></i> Lista de incidencias</a></li>
                     <li><a href="#"><i class="fas fa-user-tie"></i> Espacio para tutor</a>
                          <ul>
                              <li><a href="#"><i class="far fa-calendar-plus"></i> Planes de trabajo</a></li>
                              <li><a href="#"><i class="far fa-calendar-plus"></i> Informes finales</a></li>
                              <li><a href="#"><i class="fas fa-envelope"></i> Envio de correo</a></li>
                              <li><a href="#"><i class="far fa-clock"></i> Historial de correos</a></li>
-                             <li><a href="#"><i class="fas fa-inbox"></i> Buz√≥n de sugerencias</a></li>
+                             <li><a href="#"><i class="fas fa-inbox"></i> BuzÛn de sugerencias</a></li>
                          </ul>
                      </li>   
                 </ul>
@@ -65,7 +66,7 @@ and open the template in the editor.
                     <label>TUTOR</label>
                 </div>
                 <div class="incidencia" style="margin-top: 6px;">
-                    <input type="text" value="CONTRERAS NU√ëO, JONATAN(214423214)" readonly="">
+                    <input type="text" value="<%=tutor%>" readonly="">
                 </div>
             </div>
             <br>
@@ -73,7 +74,9 @@ and open the template in the editor.
                 <label><b>Programa</b></label>
                 <br>
                 <select>
-                    <option>Licenciatura en tecnolog√≠as de la informaci√≥n(LTEI)</option>
+                    <%for(int i=0; i<programa.length;i++){%>
+                        <option><%=programa[i]%></option>
+                    <%}%>
                 </select>
             </div>
             <br>
@@ -88,38 +91,32 @@ and open the template in the editor.
                     </tr>
                 </thead>
                 <tbody class="table-hover">
-                    <tr>
-                        <td class="text-left"><input type="radio">&nbsp;<a href="#" onclick="document.getElementById('id01').style.display='block'">Contreras Nu√±o, Jonatan(214423214)</a></td>
-                <td>ICCO</td>
-                        <td>CUTonal√°</td>
-                        <td>Activo(AC)</td>
-                        <td>NULL</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left"><input type="radio">&nbsp;<a href="#" onclick="document.getElementById('id01').style.display='block'">Contreras Nu√±o, Jonatan(214423214)</a></td>
-                <td>ICCO</td>
-                        <td>CUTonal√°</td>
-                        <td>Activo(AC)</td>
-                        <td>NULL</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left"><input type="radio">&nbsp;<a href="#" onclick="document.getElementById('id01').style.display='block'">Contreras Nu√±o, Jonatan(214423214)</a></td>
-                <td>ICCO</td>
-                        <td>CUTonal√°</td>
-                        <td>Activo(AC)</td>
-                        <td>NULL</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left"><input type="radio">&nbsp;<a href="#" onclick="document.getElementById('id01').style.display='block'">Contreras Nu√±o, Jonatan(214423214)</a></td>
-                <td>ICCO</td>
-                        <td>CUTonal√°</td>
-                        <td>Activo(AC)</td>
-                        <td>NULL</td>
-                    </tr>
+                    <%
+                    for(int i=0;i<alumnos.length;i++){
+                    %>
+                        <tr>
+                        <%
+                        for(int x=0;x<alumnos[i].length;x++){
+                        %>
+                            <%
+                            if(x==0){
+                            %>
+                            <td class="text-left"><input type="radio">&nbsp;<a href="#" onclick="document.getElementById('id01').style.display='block'"><%=alumnos[i][x]%></a></td>
+                            <%
+                            x=1;
+                            }else
+                            %>
+                            <td><%=alumnos[i][x]%></td>
+                        <%
+                        }
+                        %>
+                    <%
+                    }
+                    %>
                 </tbody>
             </table>   
             <br>
-            <label>Descripci√≥n</label>
+            <label>DescripciÛn</label>
             <textarea></textarea>
             <br>
             <div class="archivo">                    
@@ -130,7 +127,7 @@ and open the template in the editor.
         <div id="id01" class="modal">
             <div class="modal-contenido">
                 <div class="info">
-                    <b>Informaci√≥n general del estudiante</b>
+                    <b>InformaciÛn general del estudiante</b>
                     <span onclick="document.getElementById('id01').style.display='none'" class="cerrar">&times;</span>
                 </div>
                 <div class="datos-estudiante">
@@ -143,14 +140,14 @@ and open the template in the editor.
                                     <th >Codigo</th>
                                     <th>Apellido</th>
                                     <th>Nombre</th>
-                                    <th>Adminisi√≥n</th>
-                                    <th>Situaci√≥n</th>
+                                    <th>AdminisiÛn</th>
+                                    <th>SituaciÛn</th>
                                 </tr>
                             </thead>
                             <tbody class="table-hover">
                                 <tr>
                                     <td>214423214</td>
-                                        <td>Contreras Nu√±o</td>
+                                        <td>Contreras NuÒo</td>
                                     <td>Jonatan(AC)</td>
                                     <td>2017A</td>
                                     <td>Alumno Activo(AC)</td>
@@ -182,7 +179,7 @@ and open the template in the editor.
                                     <th colspan="2" class="text-left">Momento de tutoria</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="3" class="text-left">CONTRERAS NU√ëO JONATAN</td>
+                                    <td colspan="3" class="text-left">CONTRERAS NU—O JONATAN</td>
                                     <td colspan="2" class="text-left">Permanencia</td>
                                 </tr>
                             </tbody>
@@ -232,8 +229,8 @@ and open the template in the editor.
                             <thead>
                                 <tr>
                                     <th class="text-left">Programa educativo</th>
-                                    <th>Admisi√≥n</th>
-                                    <th class="text-left">Situaci√≥n</th>
+                                    <th>AdmisiÛn</th>
+                                    <th class="text-left">SituaciÛn</th>
                                 </tr>
                             </thead>
                             <tbody class="table-hover">
@@ -247,12 +244,12 @@ and open the template in the editor.
                     </div>
                 <div class="datos-estudiante"> 
                     <div class="datos">
-                        <b>RESULTADOS DEL CURSO DE SELECCI√ìN </b>
+                        <b>RESULTADOS DEL CURSO DE SELECCI”N </b>
                     </div>
                     <table class="table-fill"  width="100%">
                         <thead>
                             <tr>
-                                <th colspan="2">Fecha de valoraci√≥n: del 01/ene/2019 al 26/jun 2019</th>
+                                <th colspan="2">Fecha de valoraciÛn: del 01/ene/2019 al 26/jun 2019</th>
                                 <th class="text-left" colspan="2">Promedio global 90.7</th>
                             </tr>
                         </thead>
