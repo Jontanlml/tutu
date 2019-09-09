@@ -278,6 +278,72 @@
                                 <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
                                 <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">INFRAESTRUCTURA DE TECNOLOGIAS DE INFORMACION</td>
+                                    <td class="text-left">&nbsp;E&nbsp;&nbsp;&nbsp;</td>
+                                <td class="text-left">TOPICOS SELECTOS DE INGENIERIA DE SOFTWARE</td>
+                                <td class="text-left">&nbsp;MB&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
